@@ -29,7 +29,7 @@ class NodeJsSetup extends BaseSetup {
                 'options' => ['v20.10.0', 'v18.18.2', 'v16.20.2'],
             ],
             'start_script' => ['type'=>'text', 'placeholder'=>'npm run start'],
-            'port' => ['type' => 'text', 'placeholder' => '3000'],
+            'port' => ['type' => 'number', 'placeholder' => '3000', 'value' => '3000', 'min' => '1', 'max' => '65535', 'required' => 'true'],
         ],
         'database' => false,
         'server' => [
